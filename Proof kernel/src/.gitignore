@@ -1,0 +1,17 @@
+# Rust build output
+/target/
+
+# Coq/Rocq compiled artifacts
+*.vo
+*.vok
+*.vos
+*.glob
+
+# Temporary, editor, and OS files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db

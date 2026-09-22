@@ -1,0 +1,110 @@
+DIGEST e08d4c542ad320702d0eb0db2fadd8f8
+FUnverifiedProof
+R27:30 Stdlib.Lists.List <> <> lib
+R40:52 Stdlib.Lists.List ListNotations <> mod
+rec 63:66 <> Rule
+proj 73:79 <> rule_id
+proj 88:95 <> required
+R83:85 Corelib.Init.Datatypes <> nat ind
+R99:101 Corelib.Init.Datatypes <> nat ind
+def 118:125 <> Evidence
+R133:136 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R130:132 Corelib.Init.Datatypes <> nat ind
+R137:140 Corelib.Init.Datatypes <> bool ind
+ind 154:160 <> Verdict
+constr 165:172 <> VERIFIED
+constr 176:185 <> UNVERIFIED
+constr 189:195 <> UNKNOWN
+scheme 154:160 <> Verdict_rect
+scheme 154:160 <> Verdict_ind
+scheme 154:160 <> Verdict_rec
+scheme 154:160 <> Verdict_sind
+rec 206:226 <> UnverifiedCertificate
+proj 233:244 <> cert_rule_id
+proj 253:266 <> cert_predicate
+R248:250 Corelib.Init.Datatypes <> nat ind
+R270:272 Corelib.Init.Datatypes <> nat ind
+def 289:292 <> Eval
+R304:307 Corelib.Init.Datatypes <> list ind
+R309:312 UnverifiedProof <> Rule rec
+binder 295:300 <> policy:9
+R320:327 UnverifiedProof <> Evidence def
+binder 316:316 <> e:10
+R341:343 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R334:340 UnverifiedProof <> Verdict ind
+R344:364 UnverifiedProof <> UnverifiedCertificate rec
+R377:382 UnverifiedProof <> policy:9 var
+R393:395 Corelib.Init.Datatypes <> nil constr
+R400:400 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R408:412 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R451:454 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R401:407 UnverifiedProof <> UNKNOWN constr
+R413:424 UnverifiedProof <> cert_rule_id proj
+R413:424 UnverifiedProof <> cert_rule_id proj
+R413:424 UnverifiedProof <> cert_rule_id proj
+R432:445 UnverifiedProof <> cert_predicate proj
+R432:445 UnverifiedProof <> cert_predicate proj
+R495:498 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R463:469 UnverifiedProof <> rule_id proj
+R463:469 UnverifiedProof <> rule_id proj
+R463:469 UnverifiedProof <> rule_id proj
+R479:486 UnverifiedProof <> required proj
+R479:486 UnverifiedProof <> required proj
+R510:510 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R547:558 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R599:602 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R514:514 UnverifiedProof <> e:10 var
+R537:546 UnverifiedProof <> UNVERIFIED constr
+R523:530 UnverifiedProof <> VERIFIED constr
+R559:570 UnverifiedProof <> cert_rule_id proj
+R559:570 UnverifiedProof <> cert_rule_id proj
+R559:570 UnverifiedProof <> cert_rule_id proj
+R580:593 UnverifiedProof <> cert_predicate proj
+R580:593 UnverifiedProof <> cert_predicate proj
+prf 620:644 <> unverified_cert_soundness
+binder 657:662 <> policy:12
+binder 664:664 <> e:13
+binder 666:666 <> c:14
+R704:711 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R686:688 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R673:676 UnverifiedProof <> Eval def
+R678:683 UnverifiedProof <> policy:12 var
+R685:685 UnverifiedProof <> e:13 var
+R689:689 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R700:701 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R703:703 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R690:699 UnverifiedProof <> UNVERIFIED constr
+R702:702 UnverifiedProof <> c:14 var
+R712:718 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R722:723 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 719:719 <> r:15
+binder 721:721 <> p:16
+R735:744 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R724:725 Stdlib.Lists.List <> In def
+R729:734 UnverifiedProof <> policy:12 var
+R727:727 UnverifiedProof <> r:15 var
+R771:774 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R754:756 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R745:751 UnverifiedProof <> rule_id proj
+R753:753 UnverifiedProof <> r:15 var
+R757:768 UnverifiedProof <> cert_rule_id proj
+R770:770 UnverifiedProof <> c:14 var
+R789:792 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R785:787 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R775:782 UnverifiedProof <> required proj
+R784:784 UnverifiedProof <> r:15 var
+R788:788 UnverifiedProof <> p:16 var
+R796:798 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R793:793 UnverifiedProof <> e:13 var
+R795:795 UnverifiedProof <> p:16 var
+R799:803 Corelib.Init.Datatypes <> false constr
+R1004:1010 UnverifiedProof <> rule_id proj
+R1004:1010 UnverifiedProof <> rule_id proj
+R1004:1010 UnverifiedProof <> rule_id proj
+R1020:1027 UnverifiedProof <> required proj
+R1020:1027 UnverifiedProof <> required proj
+R1004:1010 UnverifiedProof <> rule_id proj
+R1004:1010 UnverifiedProof <> rule_id proj
+R1004:1010 UnverifiedProof <> rule_id proj
+R1020:1027 UnverifiedProof <> required proj
+R1020:1027 UnverifiedProof <> required proj

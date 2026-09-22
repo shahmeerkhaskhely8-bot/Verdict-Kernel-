@@ -1,0 +1,79 @@
+DIGEST dfd5cff87e6c97f99e2a8723553b6e33
+FVerdict
+ind 633:639 <> Verdict
+constr 655:664 <> Unverified
+constr 670:686 <> PartiallyVerified
+constr 692:699 <> Verified
+constr 705:711 <> Unknown
+constr 717:728 <> Contradicted
+scheme 633:639 <> Verdict_rect
+scheme 633:639 <> Verdict_ind
+scheme 633:639 <> Verdict_rec
+scheme 633:639 <> Verdict_sind
+def 818:822 <> merge
+R831:837 Verdict <> Verdict ind
+binder 825:825 <> a:3
+binder 827:827 <> b:4
+R842:848 Verdict <> Verdict ind
+R864:864 Verdict <> b:4 var
+R861:861 Verdict <> a:3 var
+R875:886 Verdict <> Contradicted constr
+R894:905 Verdict <> Contradicted constr
+R914:925 Verdict <> Contradicted constr
+R930:941 Verdict <> Contradicted constr
+R947:953 Verdict <> Unknown constr
+R970:976 Verdict <> Unknown constr
+R987:994 Verdict <> Verified constr
+R997:1004 Verdict <> Verified constr
+R1009:1016 Verdict <> Verified constr
+R1022:1031 Verdict <> Unverified constr
+R1034:1043 Verdict <> Unverified constr
+R1048:1057 Verdict <> Unverified constr
+R1063:1079 Verdict <> PartiallyVerified constr
+R1082:1098 Verdict <> PartiallyVerified constr
+R1103:1119 Verdict <> PartiallyVerified constr
+R1125:1132 Verdict <> Verified constr
+R1135:1151 Verdict <> PartiallyVerified constr
+R1156:1163 Verdict <> Verified constr
+R1169:1185 Verdict <> PartiallyVerified constr
+R1188:1195 Verdict <> Verified constr
+R1200:1207 Verdict <> Verified constr
+R1213:1222 Verdict <> Unverified constr
+R1225:1241 Verdict <> PartiallyVerified constr
+R1246:1255 Verdict <> Unverified constr
+R1261:1277 Verdict <> PartiallyVerified constr
+R1280:1289 Verdict <> Unverified constr
+R1294:1303 Verdict <> Unverified constr
+R1309:1316 Verdict <> Verified constr
+R1319:1328 Verdict <> Unverified constr
+R1333:1344 Verdict <> Contradicted constr
+R1350:1359 Verdict <> Unverified constr
+R1362:1369 Verdict <> Verified constr
+R1374:1385 Verdict <> Contradicted constr
+prf 1436:1445 <> merge_comm
+R1462:1468 Verdict <> Verdict ind
+binder 1456:1456 <> a:7
+binder 1458:1458 <> b:8
+R1480:1482 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1471:1475 Verdict <> merge def
+R1477:1477 Verdict <> a:7 var
+R1479:1479 Verdict <> b:8 var
+R1483:1487 Verdict <> merge def
+R1489:1489 Verdict <> b:8 var
+R1491:1491 Verdict <> a:7 var
+prf 1592:1602 <> merge_assoc
+R1623:1629 Verdict <> Verdict ind
+binder 1615:1615 <> a:9
+binder 1617:1617 <> b:10
+binder 1619:1619 <> c:11
+R1651:1653 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1632:1636 Verdict <> merge def
+R1638:1638 Verdict <> a:9 var
+R1641:1645 Verdict <> merge def
+R1647:1647 Verdict <> b:10 var
+R1649:1649 Verdict <> c:11 var
+R1654:1658 Verdict <> merge def
+R1661:1665 Verdict <> merge def
+R1667:1667 Verdict <> a:9 var
+R1669:1669 Verdict <> b:10 var
+R1672:1672 Verdict <> c:11 var
