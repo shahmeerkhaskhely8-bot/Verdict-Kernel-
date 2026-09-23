@@ -1,6 +1,6 @@
 use std::env;
 
-use verdict::{evaluate_policy, Policy, PolicyEngine};
+use verdict::{evaluate_policy, PolicyEngine};
 
 fn main() {
     let Some(input) = env::args().nth(1) else {
@@ -13,7 +13,7 @@ fn main() {
         return;
     };
 
-    let mut policy = Policy::<i32, 1>::new();
+    let mut policy = PolicyEngine::<i32, 1>::new();
     let _ = policy.add_rule(|value| evaluate_policy(*value));
     println!("{:?}", PolicyEngine::evaluate(&policy, &value));
 }

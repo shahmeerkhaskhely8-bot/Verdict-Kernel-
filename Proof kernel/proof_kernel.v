@@ -13,9 +13,9 @@ Definition merge_verdict (v1 v2 : Verdict) : Verdict :=
   | Unknown, v => v
   | Verified, Unknown => Verified
   | Verified, Verified => Verified
-  | Verified, Unverified => Verified
+  | Verified, Unverified => Unverified
   | Unverified, Unknown => Unverified
-  | Unverified, Verified => Verified
+  | Unverified, Verified => Unverified
   | Unverified, Unverified => Unverified
   end.
 
