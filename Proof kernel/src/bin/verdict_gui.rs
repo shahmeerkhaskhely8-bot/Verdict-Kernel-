@@ -1,13 +1,5 @@
 use eframe::egui;
-use verdict::{Policy, PolicyEngine, Verdict};
-
-fn evaluate_integer(value: &i32) -> Verdict {
-    if *value > 0 {
-        Verdict::Verified
-    } else {
-        Verdict::Unverified
-    }
-}
+use verdict::{evaluate_policy, Policy, PolicyEngine, Verdict};
 
 /// Presentation-only desktop application.
 ///
@@ -23,7 +15,7 @@ struct VerdictApp {
 impl Default for VerdictApp {
     fn default() -> Self {
         let mut policy = Policy::new();
-        let _ = policy.add_rule(evaluate_integer);
+        let _ = policy.add_rule(|value| evaluate_policy(*value));
 
         Self {
             input: String::new(),

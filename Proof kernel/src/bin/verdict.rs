@@ -1,14 +1,6 @@
 use std::env;
 
-use verdict::{Policy, PolicyEngine, Verdict};
-
-fn evaluate_integer(value: &i32) -> Verdict {
-    if *value > 0 {
-        Verdict::Verified
-    } else {
-        Verdict::Unverified
-    }
-}
+use verdict::{evaluate_policy, Policy, PolicyEngine};
 
 fn main() {
     let Some(input) = env::args().nth(1) else {
@@ -22,6 +14,6 @@ fn main() {
     };
 
     let mut policy = Policy::<i32, 1>::new();
-    let _ = policy.add_rule(evaluate_integer);
+    let _ = policy.add_rule(|value| evaluate_policy(*value));
     println!("{:?}", PolicyEngine::evaluate(&policy, &value));
 }
