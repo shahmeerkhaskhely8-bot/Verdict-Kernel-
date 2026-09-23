@@ -9,3 +9,10 @@ path = "src/lib.rs"
 [[bin]]
 name = "verdict"
 path = "src/bin/verdict.rs"
+
+[[bin]]
+name = "verdict_gui"
+path = "src/bin/verdict_gui.rs"
+
+[dependencies]
+eframe = "0.27"
