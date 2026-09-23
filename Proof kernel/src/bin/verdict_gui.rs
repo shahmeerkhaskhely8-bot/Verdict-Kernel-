@@ -1,6 +1,14 @@
 use eframe::egui;
 use verdict::{Policy, PolicyEngine, Verdict};
 
+fn evaluate_integer(value: &i32) -> Verdict {
+    if *value > 0 {
+        Verdict::Verified
+    } else {
+        Verdict::Unverified
+    }
+}
+
 /// Presentation-only desktop application.
 ///
 /// The GUI owns no verdict logic. It forwards the parsed user input to the
@@ -9,16 +17,19 @@ struct VerdictApp {
     input: String,
     result: Verdict,
     input_status: Option<&'static str>,
-    policy: Policy<i32, 0>,
+    policy: Policy<i32, 1>,
 }
 
 impl Default for VerdictApp {
     fn default() -> Self {
+        let mut policy = Policy::new();
+        let _ = policy.add_rule(evaluate_integer);
+
         Self {
             input: String::new(),
             result: Verdict::Unknown,
             input_status: None,
-            policy: Policy::new(),
+            policy,
         }
     }
 }
